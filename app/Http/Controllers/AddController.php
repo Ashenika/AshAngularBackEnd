@@ -10,6 +10,10 @@ class AddController extends Controller
     //
     public function addStudent(Request $request){
 
+
+        header('Access-Control-Allow-Methods: GET, POST');
+        header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token, x-xsrf-token, x_csrftoken, enctype, X-Requested-With');
+
         $student = new Student();
         $student->fullname = $request->input('fullname');
         $student->age = $request->input('age');
