@@ -1,4 +1,7 @@
 <?php
+header('Access-Control-Allow-Origin: http://localhost:4200');
+header('Access-Control-Allow-Methods: GET, POST');
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token, x-xsrf-token, x_csrftoken, enctype, X-Requested-With');
 
 /**
  * Laravel - A PHP Framework For Web Artisans
